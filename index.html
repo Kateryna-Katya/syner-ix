@@ -1,56 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/syner-ix/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syner-IX — AI для реальной жизни</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700&display=swap"
+    rel="stylesheet">
     <script type="module" crossorigin src="/syner-ix/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/syner-ix/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/syner-ix/assets/styles-Xy4t9fs8.css">
   </head>
   <body>
+    <div id="top" class="scroll-wrapper">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="#top" class="logo">
+      SYNER<span>-IX</span>
+    </a>
+
+    <nav class="nav" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#hero" class="nav__link">Главная</a></li>
+        <li><a href="#practices" class="nav__link">Практики</a></li>
+        <li><a href="#innovations" class="nav__link">Инновации</a></li>
+        <li><a href="#education" class="nav__link">Обучение</a></li>
+        <li><a href="#advantages" class="nav__link">Преимущества</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="#contact" class="btn btn--primary">Связаться</a>
+      <button class="burger" id="burger-menu" aria-label="Открыть меню">
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
-
+<div class="mobile-menu" id="mobile-menu">
+  <ul class="mobile-menu__list">
+    <li><a href="#hero">Главная</a></li>
+    <li><a href="#practices">Практики ИИ</a></li>
+    <li><a href="#advantages">Преимущества</a></li>
+    <li><a href="#innovations">Инновации</a></li>
+    <li><a href="#education">Обучение</a></li>
+    <li><a href="#contact">Контакты</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="badge" data-aos="fade-up">Платформа года 2025</span>
+            <h1 class="hero__title" id="hero-title">Технологии, которые работают на вас</h1>
+            <p class="hero__subtitle">Практики применения ИИ для обычных людей. Переосмыслите подход к развитию и
+                откройте новые возможности уже сегодня.</p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#practices" class="btn btn--secondary">Узнать детали</a>
+            </div>
+        </div>
+        <div class="hero__viz">
+            <div class="ai-orb"></div>
+        </div>
+    </div>
+</section>
+
+<section class="practices" id="practices">
+    <div class="container">
+        <h2 class="section-title">AI для реальных задач</h2>
+        <div class="practices__grid">
+            <div class="practice-card">
+                <div class="practice-card__icon"><i data-lucide="zap"></i></div>
+                <h3>Быстрый старт</h3>
+                <p>Подключение занимает 2 минуты. Легко разобраться без опыта в программировании.</p>
+            </div>
+            <div class="practice-card">
+                <div class="practice-card__icon"><i data-lucide="trending-up"></i></div>
+                <h3>Стратегия роста</h3>
+                <p>Инновационная технология для пассивного дохода и автоматизации рутины.</p>
+            </div>
+            <div class="practice-card">
+                <div class="practice-card__icon"><i data-lucide="globe"></i></div>
+                <h3>Доступность</h3>
+                <p>Платформа уже доступна в Европе. Предложение активно только в странах ЕС.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages" id="advantages">
+    <div class="container advantages__container">
+        <div class="advantages__info">
+            <h2 class="section-title">Почему мы?</h2>
+            <ul class="adv-list">
+                <li class="adv-item">
+                    <span class="adv-item__num">01</span>
+                    <p><strong>Проверенный партнер:</strong> Методологии, доказавшие эффективность на тысячах кейсов.
+                    </p>
+                </li>
+                <li class="adv-item">
+                    <span class="adv-item__num">02</span>
+                    <p><strong>Экспертная поддержка:</strong> Сопровождаем вас на всех этапах освоения инструментов.</p>
+                </li>
+                <li class="adv-item">
+                    <span class="adv-item__num">03</span>
+                    <p><strong>Передовая инфраструктура:</strong> Решения, которые меняют правила игры в цифровой
+                        экономике.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="advantages__image">
+            <img src="/syner-ix/assets/one-C7souAlL.jpg" alt="AI Benefits" class="brutalist-img">
+        </div>
+    </div>
+</section>
+
+<section class="innovations" id="innovations">
+    <div class="marquee">
+        <div class="marquee__inner">
+            <span>ИННОВАЦИОННАЯ ТЕХНОЛОГИЯ • ПОШАГОВЫЙ ПУТЬ • ЦИФРОВАЯ ИНФРАСТРУКТУРА • AI-ИНСТРУМЕНТЫ • </span>
+            <span>ИННОВАЦИОННАЯ ТЕХНОЛОГИЯ • ПОШАГОВЫЙ ПУТЬ • ЦИФРОВАЯ ИНФРАСТРУКТУРА • AI-ИНСТРУМЕНТЫ • </span>
+        </div>
+    </div>
+</section>
+
+<section class="education" id="education">
+    <div class="container">
+        <h2 class="section-title">База знаний</h2>
+        <div class="edu-grid">
+            <article class="edu-card">
+                <div class="edu-card__tag">Статья</div>
+                <h3>Как ИИ экономит 10 часов в неделю</h3>
+                <p>Практики, применимые уже сегодня для каждого фрилансера и офисного сотрудника.</p>
+                <a href="#contact" class="edu-card__more">Читать далее →</a>
+            </article>
+            <article class="edu-card">
+                <div class="edu-card__tag">Гайд</div>
+                <h3>Постройте карьеру с ИИ</h3>
+                <p>Расширьте горизонты проекта и создайте портфолио нового поколения.</p>
+                <a href="#contact" class="edu-card__more">Смотреть гайд →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__wrapper">
+            <div class="contact__info">
+                <h2 class="section-title">Есть вопросы?</h2>
+                <p>Бесплатная консультация по всем вопросам. Наши эксперты свяжутся с вами в течение 15 минут.</p>
+            </div>
+            <form class="contact__form" id="main-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон (только цифры)" required>
+                </div>
+
+                <div class="captcha">
+                    <label id="captcha-label">Сколько будет 5 + 3?</label>
+                    <input type="number" id="captcha-input" placeholder="Ответ" required>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="agree" required>
+                    <label for="agree">Я согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit" class="btn btn--primary">Запросить доступ</button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer__container">
+    <div class="footer__col">
+      <a href="#top" class="logo logo--footer">SYNER-IX</a>
+      <p class="footer__text">Технологии нового поколения, адаптированные для повседневных задач каждого человека.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Навигация</h4>
+      <ul class="footer__links">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#practices">Практики ИИ</a></li>
+        <li><a href="#education">База знаний</a></li>
+        <li><a href="#contact">Контакты</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Юридическая информация</h4>
+      <ul class="footer__links">
+<li><a href="privacy.html">Политика конфиденциальности</a></li>
+<li><a href="cookies.html">Политика использования файлов cookie</a></li>
+<li><a href="terms.html">Условия использования</a></li>
+<li><a href="return.html">Политика возврата</a></li>
+<li><a href="disclaimer.html">Отказ от ответственности</a></li>
+<li><a href="personal-data-policy.html">Политика обработки персональных данных</a></li>
+
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h4 class="footer__title">Связь с нами</h4>
+      <ul class="footer__contacts">
+        <li>
+          <i data-lucide="phone"></i>
+          <a href="tel:+493098765432">+49 30 9876 5432</a>
+        </li>
+        <li>
+          <i data-lucide="mail"></i>
+          <a href="mailto:hello@syner-ix.blog">hello@syner-ix.blog</a>
+        </li>
+        <li>
+          <i data-lucide="map-pin"></i>
+          <span>Friedrichstraße 100, 10117 Berlin, Germany</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <p>&copy; 2025 Syner-IX. Платформа года. Все права защищены.</p>
   </div>
 </footer>
-
-
+    <div class="cookie-popup" id="cookie-popup">
+      <div class="cookie-popup__content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button class="btn btn--primary" id="cookie-accept">Принять</button>
+      </div>
+    </div>
+</div>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
   </body>
 </html>
